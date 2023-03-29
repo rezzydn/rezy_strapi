@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accounts",
+  "info": {
+    "name": "Accounts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "integer",
+      "unique": false,
+      "required": false
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}
