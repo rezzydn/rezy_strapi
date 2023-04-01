@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/30/2023 12:55:47 AM"
+    "x-generation-date": "04/01/2023 2:36:47 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2794,7 +2794,7 @@
             "type": "string"
           },
           "user_id": {
-            "type": "integer"
+            "type": "string"
           },
           "full_name": {
             "type": "string"
@@ -2811,7 +2811,7 @@
       "NewAccounts": {
         "properties": {
           "user_id": {
-            "type": "integer"
+            "type": "string"
           },
           "full_name": {
             "type": "string"

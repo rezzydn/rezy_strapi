@@ -6,21 +6,13 @@
  */
 
 module.exports = {
-    async find(ctx) {
-      const { page = 1, pageSize = 10 } = ctx.query;
-      const accounts = await strapi.services.accounts.find({
-        _start: (page - 1) * pageSize,
-        _limit: pageSize,
-      });
-      const count = await strapi.services.accounts.count();
-      return {
-        data: accounts,
-        pagination: {
-          page,
-          pageSize,
-          total: count,
-        },
-      };
-    },
-  };
+  async find(ctx) {
+    const data = await strapi.query('accounts').find(ctx.query);
+
+    // Remove the key from the data object
+    const results = data.map(({ key, ...rest }) => rest);
+
+    return results;
+  },
+};
   

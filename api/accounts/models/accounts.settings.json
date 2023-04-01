@@ -12,7 +12,7 @@
   "pluginOptions": {},
   "attributes": {
     "user_id": {
-      "type": "integer",
+      "type": "string",
       "unique": false,
       "required": false
     },

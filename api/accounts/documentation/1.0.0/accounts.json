@@ -523,7 +523,7 @@
             "type": "string"
           },
           "user_id": {
-            "type": "integer"
+            "type": "string"
           },
           "full_name": {
             "type": "string"
@@ -540,7 +540,7 @@
       "NewAccounts": {
         "properties": {
           "user_id": {
-            "type": "integer"
+            "type": "string"
           },
           "full_name": {
             "type": "string"
